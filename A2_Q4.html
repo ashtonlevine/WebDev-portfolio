@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Question 4</title>
+    <link rel = "stylesheet" href = "A2_Q4.css">
+    <script src = "A2_Q4.js"></script>
+</head>
+<body>
+    <h1>Order books online</h1>
+
+    <fieldset>
+        <table>
+           <tr>
+               <th>Book</th>
+               <th>Quantity</th>
+               <th>Price</th>
+           </tr>
+
+           <tr>
+                <td>Basic Web Programming</td>
+                <td><input class="Quantity" type ="number" name = "BWP" id = "BWP" min = "0"></td>
+                <td>$19.99</td>
+           </tr>
+           <tr>
+            <td>Intro to PHP</td>
+            <td><input class="Quantity" type ="number" name = "PHP" id ="PHP" min = "0"></td>
+            <td>$86.00</td>
+       </tr>
+       <tr>
+        <td>Advanced JQuery</td>
+        <td><input class="Quantity" type ="number" name = "JQ" id = "JQ" min = "0"></td>
+        <td>$55.00</td>
+   </tr>
+
+        </table>
+        <br>
+        <input type="button" value="Calculate the Order" onclick = "calculateOrder()">
+        <br>
+    </fieldset>
+    <br>
+    <p id = "BWPPrice"></p>
+    <p id = "PHPPrice"></p>
+    <p id = "JQPrice"></p>
+    <p id = "TotalPrice"></p>
+</body>
+</html>

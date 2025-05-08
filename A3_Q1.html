@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 Question 1</title>
+</head>
+<body>
+    <h1>Exercise 1 using Nodejs</h1>
+
+    <h2>Find Summation</h2>
+    <form action = "/findSummation" method = "post">
+    <label for = "number">Enter a positive integer</label>   
+    <input type = "number" id = "number" name = "number" required> <!-- the required attribute is used to specify that the input field must be filled out before submitting the form -->
+    <button type = "submit">Submit</button>
+    </form><br>
+
+    <h2>Uppercase first and last letter of a string</h2>
+    <form action = "/uppercaseFirstandLast" method = "post">
+    <label for = "uppercaseString">Enter a string</label>
+    <input type = "text" id = "uppercaseString" name = "uppercaseString" required>
+    <button type = "submit">Submit</button>
+    </form><br>
+
+    <h2>find the average and median of an array of numbers</h2> <!-- enter an array in this format: [1,2,3,4,5,6,7,8]-->
+    <form action = "/findAverageandMedian" method = "post">
+    <label for = "numArray">Enter an array of numbers separated by commas</label>
+    <input type = "text" id = "numArray" name = "numArray" required>
+    <button type = "submit">Submit</button>
+    </form><br>
+
+    <h2>find first number with 4 digits in a string of numbers seperated by spaces. </h2>
+    <form action = "/find4Digits" method = "post">
+    <label for = "numString">Enter a string of numbers separated by spaces</label>
+    <input type = "text" id = "numString" name = "numString" required>
+    <button type = "submit">Submit</button>
+    </form><br>
+</body>
+</html>

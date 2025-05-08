@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 Question 8 (Cat Care information)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href = "./A1_Q8_HOMEPAGE.html"><img src ="../IMGS/SimpleLogo.png" alt = "Pet Adoption Logo" width = "100" height = "100"></a> 
+     <a class = "headertext" href = "./A1_Q8_HOMEPAGE.html"><h1 class = "headertext">Paws and Hearts Pet Adoption</h1>
+     </a> 
+     <link rel="stylesheet" href="A1_Q8_GIVEAWAY.css">
+ </header>
+<div id="sidemenu">
+     <ul>
+         <li><a href = "./A1_Q8_HOMEPAGE.html">Home</a></li>
+         <li><a href = "./A1_Q8_BROWSEPETS.html">Browse Available Pets</a></li>
+         <li><a href = "./A1_Q8_FINDPET.html">Find a Dog/Cat</a></li>
+         <li><a href = "./A1_Q8_DOGCARE.html">Dog Care</a></li>
+         <li><a href = "./A1_Q8_CATCARE.html">Cat Care</a></li>
+         <li><a href = "./A1_Q8_GIVEAWAY.html">Have a Pet to Giveaway?</a></li>
+         <li><a href = "./A1_Q8_CONTACT.html">Contact us</a></li>
+     </ul>
+ </div>
+<div id="form">
+    <form>
+        <fieldset><legend>Giveaway Form</legend>
+        <label>Type of Pet:</label><br>
+         <input type="radio" name="pet" value="dog" id="dog">
+            <label for="dog">Dog</label>
+         <input type = "radio" name = "pet" value = "cat" id = "cat">
+            <label for = "cat">Cat</label><br><br>
+            <label for = "dogbreed">Dog Breed:</label><br>
+        <select id = "dogbreed">
+            <option value = "none">Other</option>
+            <option value = "labrador">Labrador</option>
+            <option value = "bulldog">Bulldog</option>
+            <option value = "poodle">Poodle</option>
+            <option value = "beagle">Beagle</option>
+            <option value = "germanshepherd">German Shepherd</option>
+            <option value = "goldenretriever">Golden Retriever</option>
+            <option value = "labradoodle">Labradoodle</option>
+        </select><br>
+        <label for ="otherdog">if other type breed here: </label><br>
+        <input type ="text" name = "otherdog" id = "otherdog"><br><br>
+        <label for = "catbreed">Cat Breed:</label><br>
+        <select id = "catbreed">
+            <option value = "none">Other</option>
+            <option value = "persian">Persian</option>
+            <option value = "siamese">Siamese</option>
+            <option value = "mainecoon">Mainecoon</option>
+        </select><br>
+        <label for ="othercat">if other type breed here: </label>
+        <input type ="text" name = "othercat" id = "othercat"><br><br>
+        <label>Age of pet:</label><br>
+        <select>
+            <option value = "young">Young (0 to 1 years old)</option>
+            <option value = "adult">Adult (2 - 8 years old)</option>
+            <option value = "senior">Senior (9+ years old)</option> 
+        </select>
+        <br><br>
+        <label>Choose a preffered gender:</label><br>
+        <input type = "radio" name = "gender" value = "male" id = "male">
+        <label for = "male">Male</label>
+        <input type = "radio" name = "gender" value = "Female" id = "Female">
+        <label for = "Female">Female</label>
+        <input type = "radio" name = "gender" value = "none" id = "none">
+        <label>Doesn't Matter</label><br><br>
+        <label>Behaviour Type (select those that apply)</label> <br>
+        <input type ="checkbox" name = "behaviour" value = "cats" id ="cats">
+        <label>Gets along with Cats</label><br>
+        <input type ="checkbox" name = "behaviour" value = "dogs" id ="dogs">
+        <label>Gets along with Dogs</label><br>
+        <input type ="checkbox" name = "behaviour" value = "people" id ="people">
+        <label>Gets along with other People/Small Children</label><br><br>
+        <label for = "bragabout">Brag about your pet:</label><br>
+        <textarea name="bragabout" id="bragabout" ></textarea><br><br>
+        <label>Please enter your Name and Email below: </label><br>
+        <label for ="fullname">Full Name:</label>
+        <input type = "text" name ="fullname" id ="fullname"><br><br>
+        <label for = "email">Email: </label>
+        <input type = "text" name = "email" id = "email"><br>
+        
+        </fieldset><br>
+        <input type ="submit" name="submit" value ="Submit Search Form" id = "submit">
+        <input type = "reset" name ="reset" value= "Reset Form" id = "reset">
+    </form>
+    </div>
+   
+    <footer>
+        <p>&copy; 2025 Paws and Hearts Pet Adoption</p>
+        <a id = "privacy" href = "./A1_Q8_PRIVACY.html">Privacy Policy & Disclaimer</a>
+    </footer>  
+</body>
+</html>

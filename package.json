@@ -1,16 +1,15 @@
 {
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "mysql": "^2.18.1"
-  },
-  "name": "vse",
+  "name": "assignment3",
   "version": "1.0.0",
-  "description": "working with SQL",
-  "main": "index.js",
+  "description": "Assignment 3 for SOEN287",
+  "main": "A3_Q1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ashton Levine",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
+  }
 }

@@ -19,74 +19,20 @@ header{
     left: 0; 
     z-index: 10; 
 }
-header #headerDateTime {
+.headertext{
     color: white;
-    background-color: #77529e;
-    padding: 5px;
-    margin:0;
-    font-size: 14px;
-    width: 30%;
-    top: 0;
-    right: 10px;
     text-align: center;
-    position: absolute;
-    z-index: 10;
-    border-radius: 0 0 0 10px;
-    box-shadow: 5px 5px 5px black;
-    right:0;
-}
-/* Ensure the container is block-level and centers its content */
-.header-container {
-    display: inline-block; 
-    text-align: center; 
-    text-decoration: none; 
-    color: inherit; 
-}
-
-/* Style the image */
-.header-container img {
-    display: block; 
-    margin: 0 auto; 
-    border-radius: 50%;
-}
-
-/* Style the text */
-.header-container .headertext {
-    display: block; 
-    margin-top: 10px; 
-    font-size: 25px; 
-    color: white; 
+    width: 350px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
     text-decoration: none;
 }
-fieldset{
-    background-color: #a5bdfd;
-    border: 1px solid purple;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-fieldset legend{
-    background-color: #77529e;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 20px;
-    border: 1px solid purple;
-}
-fieldset .SubmitReset {
-    background-color: #77529e;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    border: 1px solid purple;
-}
-fieldset .SubmitReset:hover{
-    background-color: #a5bdfd;
-}
-fieldset .SubmitReset:active{
-    background-color: #77529e;
+header img{
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
 }
 #sidemenu{
     width: 200px;
@@ -119,7 +65,7 @@ fieldset .SubmitReset:active{
 #sidemenu li a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 #sidemenu li:hover{
     background-color: #a5bdfd;
@@ -156,29 +102,12 @@ footer a{
 }
 @media only screen and (max-width: 768px) {
     header {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
         font-size: 18px;
-        height: auto;
-        padding: 10px; 
-        position: fixed;  
-    } 
-    header img {
-        width: 75px; 
-        height: 50px;
-        margin-bottom: 5px; 
+        
     }
-    header .headertext {
-        font-size: 16px; 
-        text-align: center; 
-        margin: 5px 0; 
-    }
-    header #headerDateTime {
-        font-size: 12px; 
-        margin-top: 5px; 
-        text-align: center; 
+    .headertext {
+        width: 100%;
+        font-size: 16px;
     }
     #sidemenu {
         width: 100%;
@@ -205,13 +134,5 @@ footer a{
     }
     footer {
         font-size: 12px;
-    }
-}
-@media only screen and (max-width: 333px) {
-    header .headertext {
-       display:none;
-    }
-    header #headerDateTime {
-        display:none;
     }
 }
