@@ -1,0 +1,144 @@
+<div id="sidemenu">
+    <ul>
+        <li><a href="/">Home</a></li>
+    <% if (username) { %>
+        <li><a href="/logout">Logout</a></li>
+    <% } else { %>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/create-account">Create an Account</a></li>
+    <% } %>
+    <li><a href="/find-pet">Find a Pet</a></li>
+    <li><a href="/giveaway">Have a Pet to Giveaway?</a></li>
+    <li><a href="/contact">Contact Us</a></li>
+    </ul>
+</div>
+<div>
+    <form id="form">
+        <fieldset>
+            <legend>Find a Dog/Cat</legend>
+            <label for="dogselect">Choose a pet:</label><br>
+            <input type="radio" name="pet" value="dog" id="dogselect">
+            <label for="dogselect">Dog</label>
+            <input type="radio" name="pet" value="cat" id="catselect">
+            <label for="catselect">Cat</label><br><br>
+            <label for="dogbreed">Choose a dog breed:</label><br>
+            <select id="dogbreed">
+                <option value="none">Doesn't Matter</option>
+                <option value="labrador">Labrador</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="poodle">Poodle</option>
+                <option value="beagle">Beagle</option>
+                <option value="germanshepherd">German Shepherd</option>
+                <option value="golden retriever">Golden Retriever</option>
+                <option value="Griffon Bruxellois">Griffon Bruxellois</option>
+            </select><br><br>
+            <label for="catbreed">Choose a cat breed:</label><br>
+            <select id="catbreed">
+                <option value="none">Doesn't Matter</option>
+                <option value="Persian">Persian</option>
+                <option value="Siamese">Siamese</option>
+                <option value="Mainecoon">Mainecoon</option>
+            </select>
+            <br><br>
+            <label for="age">Choose an age:</label><br>
+            <select id="age">
+                <option value="none">Doesn't Matter</option>
+                <option value="young">Young (0 to 1 years old)</option>
+                <option value="adult">Adult (2 - 8 years old)</option>
+                <option value="senior">Senior (9+ years old)</option>
+            </select>
+            <br><br>
+            <label for="male">Choose a preferred gender:</label><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="none" id="none">
+            <label for="none">Doesn't Matter</label><br><br>
+            <label for="likescats">Behaviour Preference (select those that apply)</label> <br>
+            <input type="checkbox" name="behaviour" value="cats" id="likescats">
+            <label for="likescats">Gets along with Cats</label><br>
+            <input type="checkbox" name="behaviour" value="dogs" id="likesdogs">
+            <label for="likesdogs">Gets along with Dogs</label><br>
+            <input type="checkbox" name="behaviour" value="people" id="likespeople">
+            <label for="likespeople">Gets along with other People/Small Children</label>
+            <br><br>
+            <input type="submit" name="submit" value="Submit Search Form" id="submit">
+            <input type="reset" name="reset" value="Reset Form" id="reset">
+        </fieldset>
+    </form>
+</div>
+<div id="available-pets">
+    <h1>Pets Available for Adoption</h1>
+    <div>
+        <form id="pet1">
+            <fieldset class="pets" 
+                      data-type = "dog"
+                      data-breed="golden retriever" 
+                      data-gender="Male" 
+                      data-age="3" 
+                      data-behaviour="all">
+                <legend><strong>Rocky</strong></legend>
+                <img src="../Golden_R.png" alt="Golden Retriever">
+                <p><strong>Breed:</strong> Golden Retriever</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Age:</strong> 3 years </p>
+                <p><strong>Behaviour: </strong> Very friendly with everyone! </p>
+                <p><strong>Description:</strong> Friendly and energetic, loves to play fetch.</p>
+                <button type="button">Interested</button>
+            </fieldset>
+        </form>
+        <form id="pet2">
+            <fieldset class = "pets" 
+                    data-type = "cat"
+                    data-breed="Siamese" 
+                    data-gender="Female" 
+                    data-age="2" 
+                    data-behaviour="all">
+                <legend><strong>Dingle</strong></legend>
+                <img src="../Siamese_C.png" alt="Siamese Cat">
+                <p><strong>Breed:</strong> Siamese</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Behaviour: </strong> Very friendly with everyone! </p>
+                <p><strong>Description:</strong> Affectionate and loves to cuddle, great with kids. also likes to sleep on its back</p>
+                <button type="button">Interested</button>
+            </fieldset>
+        </form>
+        <form id="pet3">
+            <fieldset class = "pets" 
+                    data-type = "cat"
+                    data-breed="Siamese" 
+                    data-gender="Male" 
+                    data-age="2" 
+                    data-behaviour="cats:people">
+                <legend><strong>Fidel Catstro</strong></legend>
+                <img src="../Fidel_catro.png" alt="Cat">
+                <p><strong>Breed:</strong> Siamese</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Behaviour: </strong> Very friendly with everyone except dogs </p>
+                <p><strong>Description:</strong> Loves to explore and is very curious. Prefers a calm environment and enjoys lounging in sunny spots.</p>
+                <button type="button">Interested</button>
+            </fieldset>
+        </form>
+        <form id="pet4">
+            <fieldset class = "pets" 
+            data-type = "dog"
+            data-breed="Griffon Bruxellois" 
+            data-gender="Male" 
+            data-age="2" 
+            data-behaviour="all">
+                <legend><strong>Sir Woofington</strong></legend>
+                <img src="../Mr.WiseDog.png" alt="Dog with beard">
+                <p><strong>Breed:</strong> Griffon Bruxellois</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Behaviour: </strong> Very friendly with everyone! </p>
+                <p><strong>Description:</strong> Loyal and intelligent, enjoys companionship and is great with families. Loves long walks and playing with toys.</p>
+                <button type="button">Interested</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script src = "find.js"></script>
