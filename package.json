@@ -1,0 +1,17 @@
+{
+  "name": "adoption-site-project",
+  "version": "1.0.0",
+  "description": "this is the nodejs server file for my adoption site",
+  "main": "adoptionFunctions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ashton Levine",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

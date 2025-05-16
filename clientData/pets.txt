@@ -1,0 +1,7 @@
+
+1:Ashton:dog:labrador:young:male:cats:the best goober
+2:Ashton:dog:beagle:young:male:cats:the. best
+3:Ashtonl:dog:labrador:young:male:cats:i love him
+4:Ashtonl:cat:persian:young:male:cats:the goat
+5:Ashtonl:dog:a:young:male:cats:awesome
+6:Ashtonlev:dog:a:young:male:cats:the best 
